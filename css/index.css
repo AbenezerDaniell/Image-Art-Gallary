@@ -1,60 +1,68 @@
 body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    text-align: center;
-    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-	background-size: 400% 400%;
-	animation: gradient 10s ease infinite;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  text-align: center;
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradient 10s ease infinite;
 }
 
 h1 {
-    font-family: 'Alkatra', cursive;
-    font-size: 70px;
-    color: #fff;
-    letter-spacing: 4px;
-    padding-bottom: 10px;
-    border-bottom: 3px solid #fff;
+  font-family: "Alkatra", cursive;
+  font-size: 70px;
+  color: #fff;
+  letter-spacing: 4px;
+  padding-bottom: 10px;
+  border-bottom: 3px solid #fff;
 }
 
 .btn {
-    display: inline-block;
-    text-decoration: none;
-    color: #fff;
-    margin:30px;
-    background-color: #23a6d5;
-    padding: 15px 30px;
-    border-radius: 5px;
-    font-size: 1.2rem;
-    letter-spacing: 2px;
-    transition: transform .1s ease-in;
-    font-weight: 600;
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  margin: 30px;
+  background-color: #23a6d5;
+  padding: 15px 30px;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  letter-spacing: 2px;
+  transition: transform 0.1s ease-in;
+  font-weight: 600;
 }
 .btn.btn-signup {
-    background-color: #f04d8b;
+  background-color: #f04d8b;
 }
 
 .btn:hover {
-    transform: scale(1.2);
+  transform: scale(1.2);
 }
 
+/* make button responsive */
 
-
-
+@media screen and (max-width:385px) {
+    a.btn {
+        margin: 20px;
+        padding: 10px 20px;
+        font-weight: 400;
+        font-size: 1rem;
+    }
+    
+}
 /* body background Animation */
 
 @keyframes gradient {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
