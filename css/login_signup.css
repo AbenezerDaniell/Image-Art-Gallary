@@ -9,7 +9,7 @@ body {
   animation: gradient 10s ease infinite;
 }
 
-.login {
+.form {
   margin: 10% auto;
   padding: 40px 50px;
   max-width: 300px;
@@ -17,7 +17,7 @@ body {
   background: #fff;
   box-shadow: 1px 1px 1px #666;
 }
-.login input {
+.form input {
   width: 100%;
   display: block;
   box-sizing: border-box;
@@ -28,20 +28,20 @@ body {
   font-family: Raleway, sans-serif;
 }
 
-.login input[type="text"],
-.login input[type="password"],
-.login input[type="email"] {
+.form input[type="text"],
+.form input[type="password"],
+.form input[type="email"] {
   border: 1px solid #c0c0c0;
   transition: 0.2s;
 }
 
-.login input[type="text"]:hover {
+.form input[type="text"]:hover {
   border-color: #f44336;
   outline: none;
   transition: all 0.2s ease-in-out;
 }
 
-.login input[type="submit"] {
+.form input[type="submit"] {
   border: none;
   background: #ef5350;
   color: white;
@@ -50,17 +50,17 @@ body {
   margin: 20px 0px;
 }
 
-.login input[type="submit"]:hover {
+.form input[type="submit"]:hover {
   background: #f44336;
 }
 
-.login h2 {
+.form h2 {
   margin: 20px 0 0;
   color: #ef5350;
   font-size: 28px;
 }
 
-.login p {
+.form p {
   margin-bottom: 40px;
 }
 
@@ -79,21 +79,21 @@ body {
   font-size: 1.3rem;
 }
 
-.login h2,
-.login p {
+.form h2,
+.form p {
   text-align: center;
 }
 
-.login a {
+.form a {
   text-decoration: none;
   font-size: 0.8em;
 }
 
-.login a:visited {
+.form a:visited {
   color: inherit;
 }
 
-.login a:hover {
+.form a:hover {
   text-decoration: underline;
 }
 
