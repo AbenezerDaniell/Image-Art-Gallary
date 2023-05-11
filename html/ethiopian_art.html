@@ -4,9 +4,50 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/grid.css" />
     <title>Document</title>
   </head>
   <body>
-    <h1>WELCOME</h1>
+    <nav class="nav collapsible">
+      
+      <a href="./" class="logo">Art-Gallary</a>
+
+      <div class="nav__darkmode-toggler">
+        <img style="display: inline;" src="../img/ethiopian_art/darkLight.gif" alt="">
+        <div>
+          <input  type="checkbox" class="checkbox darkmode" id="checkbox">
+          <label for="checkbox" class="checkbox-label">
+            <i class="fas fa-moon"></i>
+            <i class="fas fa-sun"></i>
+            <span class="ball"></span>
+          </label>
+        </div>
+      </div>
+
+      <svg class="nav__toggler"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 24 24"
+        width="24px"
+        height="24px"
+      >
+        <path
+          d="M 2 5 L 2 7 L 22 7 L 22 5 L 2 5 z M 2 11 L 2 13 L 22 13 L 22 11 L 2 11 z M 2 17 L 2 19 L 22 19 L 22 17 L 2 17 z"
+        />
+      </svg>
+      <ul class="list nav__list nav__expand">
+        <li class="list__item"><a href="#">All</a></li>
+        <li class="list__item"><a href="#">Ethiopian</a></li>
+        <li class="list__item"><a href="#">Photograph</a></li>
+        <li class="list__item"><a href="#">AI Art</a></li>
+        <li class="list__item"><a href="#">3D</a></li>
+      </ul>
+    </nav>
+    <div class="container">
+      
+    </div>
+    <script src="../js/grid.js"></script>
   </body>
 </html>
