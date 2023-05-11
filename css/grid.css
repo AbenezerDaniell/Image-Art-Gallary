@@ -30,7 +30,7 @@ a {
 :root {
     --bg-light-primary:#f6f4e8;
     --bg-light-secondary:#DDDDDD;
-    --bg-dark-primary:#03001c;
+    --bg-dark-primary:#0F0E0E;
     --bg-dark-secondary:#151515;
     --text-white:#F0F0F0;
     --text-dark:#18122B;
@@ -67,10 +67,7 @@ a {
     background-color: var(--bg-dark-primary);
     color: var(--text-white);
 }
-.nav__toggler {
-    width: 40px;
-    height: 30px;
-}
+
 .dark-mode .nav__toggler {
     fill: var(--text-white);
     
@@ -141,7 +138,6 @@ a {
         
     }
     
-}
     .nav__expand {
         display: flex; 
     }
@@ -155,17 +151,16 @@ a {
     .nav__toggler {
         display: none;
     }
+}
+
+/* container */
+
 .container {
     height: 100vh;
     background-color: var(--bg-light-secondary);
 }
-
 .dark-mode .container {
     background-color: var(--bg-dark-secondary);
 }
 
 
-/* Logog Animation */
-.
-  
- 
