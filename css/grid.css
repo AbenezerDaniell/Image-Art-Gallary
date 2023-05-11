@@ -184,6 +184,7 @@ a {
   .grid-container {
     grid-template-columns: repeat(3, 1fr);
   }
+  
 }
 
 /* main container Dark Mode */
@@ -192,6 +193,14 @@ a {
 }
 .grid-item {
   position: relative;
+}
+.fullscreen-icon {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    width: 40px;
+    height: 40px;
+    z-index: 100;
 }
 .overlay {
   position: absolute;
@@ -212,16 +221,25 @@ a {
   background-color: rgba(255, 255, 255, 0.8);
   transition: all .2s linear;
 }
+.fullscreen.grid-item:hover .overlay {
+    background-color: red;
+    opacity: 0;
+    z-index: -2;
+}
+
 .dark-mode .grid-item:hover .overlay {
   opacity: 1;
   background-color: rgba(0, 0, 0, 0.8);
 }
-
 .overlay h3 {
     font-family: "Pacifico", cursive;
     text-align: center;
     color: #393646;
     white-space: nowrap;
+}
+.fullscreen {
+    width: 100%;
+    height: 95
 }
 
 @media screen and (max-width:768px) {
@@ -230,7 +248,6 @@ a {
     }
     
 }
-
 .dark-mode .overlay h3 {
     color: #6C9BCF;
  
@@ -261,3 +278,4 @@ a {
     color: #EBD8B2;
     border-color: #EBD8B2;
 }
+
