@@ -4,10 +4,16 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Alkatra:wght@600;700&family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    /> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@400;700&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/index.css" />
@@ -15,10 +21,36 @@
   </head>
   <body>
     <div class="container">
-      <h1>Welcome</h1>
-      <a href="html/login.html" class="btn btn-login">Login</a>
-      <a href="html/signup.html" class="btn btn-signup">Signup</a>
-      <a href="">Working</a>
+      <div class="grid">
+        <div class="signin">
+          <form class="form" id="login-form">
+            <h2>Welcome, User!</h2>
+            <p>Please log in</p>
+            <input
+              type="text"
+              placeholder="User Name"
+              id="name"
+              required
+              autocomplete
+            />
+            <input
+              type="password"
+              placeholder="Password"
+              id="password"
+              required
+              autocomplete
+            />
+            <input type="submit" value="Log In" />
+            <div class="links">
+              <a href="html/signup.html">I Don't have an account</a>
+            </div>
+          </form>
+        </div>
+        <blockquote class="quote">
+          <h1>Art is Too Important Not to Share</h1>
+          <p>__Romero Britto</p>
+        </blockquote>
+      </div>
     </div>
   </body>
 </html>

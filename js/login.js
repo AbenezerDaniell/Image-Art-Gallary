@@ -1,6 +1,4 @@
-console.log("HHHH");
-console.log(localStorage.getItem("name"));
-console.log(localStorage.getItem("password"));
+// Sign
 const signinForm = document.querySelector("#login-form");
 signinForm.addEventListener("submit", () => {
   event.preventDefault();
