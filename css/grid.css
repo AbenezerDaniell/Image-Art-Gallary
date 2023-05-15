@@ -231,6 +231,13 @@ a {
   opacity: 1;
   background-color: rgba(0, 0, 0, 0.8);
 }
+.darkmode-label {
+  font-size: 1.5rem;
+  margin: .2rem 0 0 .5rem;
+  font-weight: bold;
+  letter-spacing: 1.2px;
+  font-family: inherit;
+}
 .overlay h3 {
     font-family: "Pacifico", cursive;
     text-align: center;
@@ -277,5 +284,64 @@ a {
 .dark-mode .btn:hover {
     color: #EBD8B2;
     border-color: #EBD8B2;
+}
+
+/* footer */
+
+.footer {
+ 
+  padding: 1rem 0;
+  background-color: var(--bg-light-primary);
+  border-top: 2px solid tomato;
+}
+
+.dark-mode .footer {
+  background-color: var(--bg-dark-primary);
+}
+
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+ .page {
+  width: 40px;
+  height: 40px;
+  padding: .5rem;
+  background: tomato;
+  border-radius: 50%;
+  margin-left: 1rem;
+  text-align: center;
+}
+.page-link {
+  color: var(--text-white);
+
+}
+@media screen and (max-width:768px) {
+  .footer {
+    padding: .5rem 0;
+  }
+  .page {
+    width: 35px;
+    height: 35px;
+    font-size: 1.7rem;
+  }
+  
+}
+
+/* Top Page navigator */
+
+.top-page {
+  position: fixed;
+  z-index: 100;
+  top: 40vh;
+  right: 5vh;
+}
+.top-page-icon {
+  width: 40px;
+  height: 40px;
+  fill: var(--text-dark);
+  font-weight: bold;
 }
 
