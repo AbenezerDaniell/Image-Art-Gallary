@@ -131,7 +131,7 @@ a {
     transition: color 0.2s linear;
   }
   .list__item:hover {
-    border-bottom: 2px solid tomato;
+    /* border-bottom: 2px solid tomato; */
     color: #999;
   }
 
@@ -148,7 +148,12 @@ a {
   .nav__toggler {
     display: none;
   }
+  .active {
+    border-bottom: 3px solid tomato;
+    padding-bottom: 1rem;
+  }
 }
+
 
 /* container */
 
@@ -343,5 +348,9 @@ a {
   height: 40px;
   fill: var(--text-dark);
   font-weight: bold;
+}
+.active-page {
+  background-color: var(--text-dark);
+  color: #fff;
 }
 

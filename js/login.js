@@ -1,18 +1,16 @@
-// Sign
-const signinForm = document.querySelector("#login-form");
-signinForm.addEventListener("submit", () => {
-  event.preventDefault();
-  const name = signinForm.querySelector("#name").value;
-  const password = signinForm.querySelector("#password").value;
-  const dbName = localStorage.getItem("name");
-  const dbPassword = localStorage.getItem("password");
-  if (name === dbName && password === dbPassword) {
-    window.location.href = "../html/ethiopian_art.html";
-  } else {
-    if (name === dbName) {
-      alert("Wrong Password!!!");
+const userName = document.querySelector('#userName');
+const password = document.querySelector('#password');
+const login = document.querySelector('#login');
+
+login.addEventListener('submit', e => {
+    event.preventDefault();
+    const dbUserName = localStorage.getItem('userName');
+    const dbPassword = Number(localStorage.getItem('password'));
+    console.log(dbUserName, dbPassword);
+    console.log(userName.value, password.value);
+    if (dbUserName === userName.value && dbPassword == password.value) {
+        window.location.href = '../html/ethiopian_art.html';
     } else {
-      alert("You don't have an account, please signup first");
+        alert("Wrong Username or Password 🚨");
     }
-  }
 });
