@@ -7,6 +7,7 @@ const signUp = document.querySelector('#signUp');
 signUp.addEventListener('submit', e => {
     event.preventDefault();
     if (password.value === confPassword.value) {
+        //password and confpassword is equal => add the user Info to the local storage
         localStorage.setItem('email', email.value);
         localStorage.setItem('userName', userName.value);
         localStorage.setItem('password', password.value.toString());
