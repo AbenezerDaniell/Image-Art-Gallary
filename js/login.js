@@ -9,7 +9,7 @@ login.addEventListener("submit", (e) => {
   const dbPassword = Number(localStorage.getItem("password"));
   // check if the inserted userName and password simmilar to the localstorage
   if (dbUserName === userName.value && dbPassword == password.value) {
-    window.open("../html/ethiopian_art.html");
+    window.open("./html/ethiopian_art.html");
   } else {
     alert("Wrong Username or Password 🚨");
   }
